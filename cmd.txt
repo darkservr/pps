@@ -1,0 +1,38 @@
+Refferences 
+https://medium.com/@asvarma1993/setting-up-local-polygone-edge-node-deploying-erc20-token-contracts-using-hardhat-token-import-8f1c0e73e9e9
+https://medium.com/coinmonks/polygon-edge-architecture-local-setup-with-metamask-for-erc20-erc721-contracts-9705d63ef438
+https://medium.com/@aditya.rola/polygon-supernets-architecture-local-setup-f356c45b1a89
+
+
+GO version 1.20
+below 3rd command run with 10002 port
+
+
+0. install polygon edge to server
+go install github.com/0xPolygon/polygon-edge@develop
+
+
+1.
+polygon-edge secrets init --data-dir test-chain-1 --insecure
+
+2. this command ip address need to change with server ip
+
+polygon-edge genesis --block-gas-limit 10000000 --epoch-size 10 --consensus ibft --bootnode /ip4/127.0.0.1/tcp/10001/p2p/16Uiu2HAmChhrcgHNhsVpFXbqsfBWfevcTkTv3VxJ1BBm5F1sqh4p \
+--premine=0x845daa50AE3a6e3E36920aA0D8433B238485Bc4c:1000000000000000000000000000000000000 \
+--premine=0xb5fBF6C6395E0A7B20151D83711957aB7B82c897:1000000000000000000000000000000000000 \
+--chain-id 867 \
+--name POSA \
+--native-token-config "POSA:PAW:18"
+
+
+3.
+polygon-edge server --data-dir ./test-chain-1 --chain genesis.json --grpc-address :10000 --libp2p :10001 --jsonrpc :10002 --seal
+
+
+
+[WARNING: INSECURE LOCAL SECRETS - SHOULD NOT BE RUN IN PRODUCTION]
+
+[SECRETS INIT]
+Public key (address) = 0xE1C636Ca47b477E913dF490aCeEf9C5453174771
+BLS Public key       = 0x955e50cd2f41f1b6e1c43f4dbfabb51cd3103ef724699a91719010c567c1690bad6ad9677165caf782184d58aa0b574f
+Node ID              = 16Uiu2HAmDoC5Fk9vgwtRQKHy3bV66Y9ZWLUKr4WzT5JeNRA4cgBC

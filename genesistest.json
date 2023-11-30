@@ -1,0 +1,121 @@
+{
+    "name": "polygon-edge",
+    "genesis": {
+        "nonce": "0x0000000000000000",
+        "timestamp": "0x0",
+        "extraData": "0x0000000000000000000000000000000000000000000000000000000000000000f90129f90120f84694a10f53e73a32644cd8d6ab9b760f7919b7c32f61b0961e7c8031147e80f96b50b3b8e1ae8f2ac2249cc22fc80fcd0a7dccfcac31841bddb4443f7e3e72320a9e565175056bf84694376125d7c08ab61b6d47188849fc133ccae5259ab08cf84f717446a14517eebea9a2ebdfc3cedaeff72fb3bd2d675667b0d23e805c97e0d01413e1f8ccf02e5e0300bc4e09f8469411490fdd87e5f531ad3dc991a3837a5ad828248fb0b77dfa1fb39811a50e39ed2f624182602aafa03472c006c4271f5c21999c5e1f38f9e5f8fcdd8ebb1c870f3062f20daff84694de994a4e8e5b1e9dc354de9e91123423cfaad5c5b0b305d9d030dd4f8bebb7f2ef30d26ec31cb4a04226ff3ea9ff8879a1b6a406d62e9ef09e9e1e4f8eb5aaa342846eb60380c28080c080",
+        "gasLimit": "0x989680",
+        "difficulty": "0x1",
+        "mixHash": "0x0000000000000000000000000000000000000000000000000000000000000000",
+        "coinbase": "0x0000000000000000000000000000000000000000",
+        "alloc": {
+            "0x0000000000000000000000000000000000000000": {
+                "balance": "0xd3c21bcecceda1000000"
+            },
+            "0x85dA99c8a7C2C95964c8EfD687E95E632Fc533D6": {
+                "balance": "0x3635c9adc5dea00000"
+            }
+        },
+        "number": "0x0",
+        "gasUsed": "0x70000",
+        "parentHash": "0x0000000000000000000000000000000000000000000000000000000000000000",
+        "baseFee": "0x3b9aca00",
+        "baseFeeEM": "0x2",
+        "baseFeeChangeDenom": "0x8"
+    },
+    "params": {
+        "forks": {
+            "EIP150": {
+                "block": 0
+            },
+            "EIP155": {
+                "block": 0
+            },
+            "EIP158": {
+                "block": 0
+            },
+            "byzantium": {
+                "block": 0
+            },
+            "constantinople": {
+                "block": 0
+            },
+            "homestead": {
+                "block": 0
+            },
+            "istanbul": {
+                "block": 0
+            },
+            "london": {
+                "block": 0
+            },
+            "londonfix": {
+                "block": 0
+            },
+            "petersburg": {
+                "block": 0
+            },
+            "quorumcalcalignment": {
+                "block": 0
+            },
+            "txHashWithType": {
+                "block": 0
+            }
+        },
+        "chainID": 100,
+        "engine": {
+            "ibft": {
+                "blockTime": 2000000000,
+                "epochSize": 10,
+                "type": "PoA",
+                "validator_type": "bls",
+                "epochReward": 1,
+                "sprintSize": 5,
+                "governance": "0x0000000000000000000000000000000000000000",
+                "nativeTokenConfig": {
+                    "name": "POSAV",
+                    "symbol": "PAW",
+                    "decimals": 18,
+                    "isMintable": true,
+                    "owner": "0xDCA2D792cBD0C8824192e835F59B70Ce9Cd9599c"
+                },
+                "initialTrieRoot": "0x0000000000000000000000000000000000000000000000000000000000000000",
+                "supernetID": 0,
+                "minValidatorSetSize": 1,
+                "maxValidatorSetSize": 9007199254740990,
+                "rewardConfig": {
+                    "rewardTokenAddress": "0x0000000000000000000000000000000000001010",
+                    "rewardWalletAddress": "0x00000000000000000000000000000000DeaDBeef",
+                    "rewardWalletAmount": "0xf4240"
+                },
+                "blockTimeDrift": 10,
+                "blockTrackerPollInterval": "1s",
+                "proxyContractsAdmin": "0x5aAeb6053F3E94C9b9A09f33669435E7Ef1BeAed"
+            }
+        },
+        "blockGasTarget": 0,
+        "burnContract": {
+            "0": "0x0000000000000000000000000000000000000000"
+        },
+        "burnContractDestinationAddress": "0x0000000000000000000000000000000000000000"
+    },
+    "bootnodes": [
+        "/ip4/127.0.0.1/tcp/30301/p2p/16Uiu2HAkvRXFSK7TWxNg2azj4F2NjcoSF7sxPrZRyXYQ4DDtSzRh",
+        "/ip4/127.0.0.1/tcp/30302/p2p/16Uiu2HAm8X2ZML7BdHd6EH7hLuvWtPtuRBPijUJUCaNT2SsX7Cdg"
+    ]
+}
+
+"validators": [
+    {
+      "address": "0x845daa50AE3a6e3E36920aA0D8433B238485Bc4c",
+      "stake": "1000000000000000000000000000000000000"
+    },
+    {
+      "address": "0xb5fBF6C6395E0A7B20151D83711957aB7B82c897",
+      "stake": "1000000000000000000000000000000000000"
+    },
+    {
+      "address": "0x98ddd28F773e48B2C5D5eaAcB1Ecb1E312adA4Ad",
+      "stake": "1000000000000000000000000000000000000"
+    }
+  ],
